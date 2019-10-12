@@ -3,11 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29319.158
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CooperativaXZ_Front.Server", "CooperativaXZ_Front.Server\CooperativaXZ_Front.Server.csproj", "{8BA6CA8F-B1E6-4235-B47E-33CA2CFED756}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CooperativaXZ_Front.Services.API", "CooperativaXZ_Front.Server\CooperativaXZ_Front.Services.API.csproj", "{8BA6CA8F-B1E6-4235-B47E-33CA2CFED756}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CooperativaXZ_Front.Client", "CooperativaXZ_Front.Client\CooperativaXZ_Front.Client.csproj", "{CD220DFC-5D1F-4975-9B42-66039F418F95}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CooperativaXZ_Front.UI.Client", "CooperativaXZ_Front.Client\CooperativaXZ_Front.UI.Client.csproj", "{CD220DFC-5D1F-4975-9B42-66039F418F95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CooperativaXZ_Front.Shared", "CooperativaXZ_Front.Shared\CooperativaXZ_Front.Shared.csproj", "{A730C7E0-3693-4FCF-9961-360106AA3572}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CooperativaXZ_Front.Infra.CrossCutting.SharedUI", "CooperativaXZ_Front.Shared\CooperativaXZ_Front.Infra.CrossCutting.SharedUI.csproj", "{A730C7E0-3693-4FCF-9961-360106AA3572}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{60B396C4-AA46-4711-BDA2-756E02ED0A46}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AA1D190D-6753-443E-8A1E-1642D85D3BBC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - UI", "1 - UI", "{F08A3CE6-CBDD-4ED1-9A51-F7D68E13EA96}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Services", "2 - Services", "{85B5EBC8-8BFF-4AC3-9807-F7C0A7F076EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Application", "3 - Application", "{DD511FB6-7D4D-44C8-AA79-ED422F6A5E69}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Domain", "4 - Domain", "{9754B329-2A56-4808-92AD-1C01E534515A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Infra", "5 - Infra", "{213A3052-223A-4884-A521-84E3DF067944}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.2 - CrossCutting", "5.2 - CrossCutting", "{BF461778-854B-419C-83B7-3801B8A196C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.1 - Data", "5.1 - Data", "{E7E3CBCE-71DE-4C6C-8062-CE25911D3F6B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +48,18 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8BA6CA8F-B1E6-4235-B47E-33CA2CFED756} = {85B5EBC8-8BFF-4AC3-9807-F7C0A7F076EF}
+		{CD220DFC-5D1F-4975-9B42-66039F418F95} = {F08A3CE6-CBDD-4ED1-9A51-F7D68E13EA96}
+		{A730C7E0-3693-4FCF-9961-360106AA3572} = {BF461778-854B-419C-83B7-3801B8A196C4}
+		{F08A3CE6-CBDD-4ED1-9A51-F7D68E13EA96} = {60B396C4-AA46-4711-BDA2-756E02ED0A46}
+		{85B5EBC8-8BFF-4AC3-9807-F7C0A7F076EF} = {60B396C4-AA46-4711-BDA2-756E02ED0A46}
+		{DD511FB6-7D4D-44C8-AA79-ED422F6A5E69} = {60B396C4-AA46-4711-BDA2-756E02ED0A46}
+		{9754B329-2A56-4808-92AD-1C01E534515A} = {60B396C4-AA46-4711-BDA2-756E02ED0A46}
+		{213A3052-223A-4884-A521-84E3DF067944} = {60B396C4-AA46-4711-BDA2-756E02ED0A46}
+		{BF461778-854B-419C-83B7-3801B8A196C4} = {213A3052-223A-4884-A521-84E3DF067944}
+		{E7E3CBCE-71DE-4C6C-8062-CE25911D3F6B} = {213A3052-223A-4884-A521-84E3DF067944}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3FD178EB-B4CE-4FCD-8523-E347F58BB4AA}
